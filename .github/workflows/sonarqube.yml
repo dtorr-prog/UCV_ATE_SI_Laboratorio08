@@ -17,11 +17,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Poetry
-        run: pip install poetry
-
-      - name: Install dependencies
-        run: poetry install
+      
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@master
